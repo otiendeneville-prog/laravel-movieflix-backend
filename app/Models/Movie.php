@@ -6,5 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Movie extends Model
 {
-    //
+    use HasFactory;
+    protected $table = 'products';
+
+    protected $fillable =[
+        'title',
+        'description',
+        'slug',
+        'poster_url',
+        'release_year'
+
+    ]
 }
